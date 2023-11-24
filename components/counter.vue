@@ -1,19 +1,25 @@
-<template>
-    <div>
-    counter
-    <p>{{ name }}</p>
-    <p>{{ count }}</p>
-    <hr>
-    <el-button @click="increment" class="">suma</el-button>
-    </div>
-</template>
 
 <script setup>
 import { useCounterStore } from '~/stores/counter';
 const store = useCounterStore()
-const {name,count} = storeToRefs(store)
-const {increment} = store
+const {name,count, doubleCount, nameUppercase} = storeToRefs(store)
+const {increment, reverseName } = store
+
+
 </script>
+
+<template>
+    <div>
+    counter
+    <p>nombre: {{ name }}</p>
+    <p>contador: {{ count }}</p>
+    <p>contador doble: {{ doubleCount }}</p>
+    <p>nombre en mayusculas: {{ nameUppercase }}</p>
+    <hr>
+    <el-button @click="increment">suma</el-button>
+    <el-button @click="reverseName">nombre al reves</el-button>
+    </div>
+</template>
 
 <style scoped>
 
