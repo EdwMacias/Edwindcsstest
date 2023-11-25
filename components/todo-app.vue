@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="m-4">
      <p class="text-3xl">todo app</p>
      <br>
      <TodoForm></TodoForm>

@@ -1,5 +1,5 @@
 <script setup>
-    import {useTodoStore} from "~/stores/todo";
+    import  { useTodoStore } from "~/stores/todo";
     const store = useTodoStore()
 </script>
 <template>

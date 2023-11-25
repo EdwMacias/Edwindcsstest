@@ -2,8 +2,8 @@ import {defineStore } from "pinia";
 
 export const useTodoStore = defineStore("todo", {
     state: () => ({
-        todoList: [{id: 0, task: "demo"}],
-        id: 0
+        todoList: [],
+        id: 0,
     }),
     actions: {
         addTodo(task) {
