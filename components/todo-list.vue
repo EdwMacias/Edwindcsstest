@@ -4,7 +4,9 @@
 </script>
 <template>
     <ul>
-        <li v-for="todo in store.todoList" :key="`todo-item${todo.id}`"> {{ todo.task }}</li>
+        <template v-for="todo in store.todoList" :key="`todo-item${todo.id}`">
+            <TodoListItem ></TodoListItem>
+        </template>
     </ul>
 </template>
 
