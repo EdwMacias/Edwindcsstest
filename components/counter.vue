@@ -16,8 +16,8 @@ const {increment, reverseName } = store
     <p>contador doble: {{ doubleCount }}</p>
     <p>nombre en mayusculas: {{ nameUppercase }}</p>
     <hr>
-    <el-button @click="increment">suma</el-button>
-    <el-button @click="reverseName">nombre al reves</el-button>
+    <button @click="increment">suma</button>
+    <button @click="reverseName"> nombre al revés</button>
     </div>
 </template>
 
